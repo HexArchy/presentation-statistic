@@ -5,19 +5,31 @@ import TitleSlide from "./components/slides/TitleSlide";
 import IntroductionSlide from "./components/slides/IntroductionSlide";
 import TypesSlide from "./components/slides/TypesSlide";
 import ThreatsSlide from "./components/slides/ThreatsSlide";
+import SampleSizeSlide from "./components/slides/SampleSizeSlide";
+import ReliabilityCalculationSlide from "./components/slides/ReliabilityCalculationSlide";
+import HypothesisTestingSlide from "./components/slides/HypothesisTestingSlide";
+import BayesianValiditySlide from "./components/slides/BayesianValiditySlide";
+import CrossValidationSlide from "./components/slides/CrossValidationSlide";
+import EffectSizeSlide from "./components/slides/EffectSizeSlide";
 import ControlMethodsSlide from "./components/slides/ControlMethodsSlide";
 import PracticalSlide from "./components/slides/PracticalSlide";
 import ConclusionSlide from "./components/slides/ConclusionSlide";
 
 const App: React.FC = () => {
   const slides = [
-    TitleSlide,
-    IntroductionSlide,
-    TypesSlide,
-    ThreatsSlide,
-    ControlMethodsSlide,
-    PracticalSlide,
-    ConclusionSlide,
+    TitleSlide, // Титульный слайд
+    IntroductionSlide, // Введение в тему
+    TypesSlide, // Виды валидности
+    ThreatsSlide, // Угрозы валидности
+    SampleSizeSlide, // Расчет размера выборки
+    ReliabilityCalculationSlide, // Расчет надежности
+    HypothesisTestingSlide, // Проверка гипотез
+    BayesianValiditySlide, // Байесовский подход
+    CrossValidationSlide, // Перекрестная валидация
+    EffectSizeSlide, // Размер эффекта
+    ControlMethodsSlide, // Методы контроля
+    PracticalSlide, // Практические рекомендации
+    ConclusionSlide, // Заключение
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
