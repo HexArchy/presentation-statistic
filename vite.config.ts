@@ -4,9 +4,19 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/presentation-statistic/', 
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+    },
+  },
+  build: {
+    assetsDir: 'assets',
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
     },
   },
   server: {
